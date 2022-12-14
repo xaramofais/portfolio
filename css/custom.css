@@ -1,0 +1,421 @@
+@charset "utf-8";
+
+/*
+* CSS-Design
+* J.P.K. Portfolio
+*/
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+	html{	font-size: 100%; }
+
+  .mainWrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: rgb(29, 28, 28);
+  }
+
+ .logo3 , .logo4{display: none;}
+
+ .logo2{display: none;}
+ 
+ .sign {
+  margin: 1%;
+  width: 50px;
+  height: 50px;
+  background-image: url("../images/logo.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.sign:hover {
+cursor:pointer;
+border-color: rgb(22, 219, 147);
+border-style: solid;
+border-width:thin;
+border-radius: 5%;
+padding: 10px ;
+}
+
+ .pointer:hover{ cursor: pointer;}
+
+ /* NAVBAR */
+
+/* change the brand and text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+  color: #578f8c;
+}
+
+
+/* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+  color: white;
+}
+
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+  color:rgb(22, 219, 147);
+}
+
+.navbar-custom-nav{
+
+text-align: justify;
+}
+
+.navbar-custom  li  .dropdown-menu a{ color:rgb(29, 28, 28);}
+
+.navbar-custom  li  .dropdown-menu a:hover{color:rgb(22, 219, 147)}
+
+/* .navbar-custom li .dropdown-menu{padding: 0; margin: 0;} */
+
+
+.navbar-custom .navbar-toggler-icon {
+   background-image: url("../images/menu2.png");
+ } 
+
+/* CAROUSEL */
+
+.carousel .slide{
+padding-top: 30px;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 48%;
+  margin-left: 20%;
+  transform: translateY(-50%);
+  bottom: initial;
+}
+
+.carousel-indicators .active{
+background-color:rgb(234, 238, 16);
+background-color:rgb(94, 30, 167);
+padding: 5px;
+}
+
+.carousel-indicators .active:nth-of-type(2){background-color: rgb(22, 219, 147);}
+
+/* BUTTON */
+
+a.button1{
+  display:inline-block;
+  padding:0.35em 1.2em;
+  border:0.1em solid #FFFFFF;
+  margin:0 0.3em 0.3em 0;
+  border-radius:0.12em;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family: "Roboto", Helvetica, sans-serif;
+  font-weight:300;
+  color:rgb(255, 255, 255);
+  background: rgb(22, 219, 147);;
+  text-align:center;
+  transition: all 0.2s;
+  font-size: 20px;
+  border-radius:  50px;
+
+  }
+
+  a.button1:hover{
+  color:rgb(22, 219, 147);
+  background:whitesmoke ;
+  text-decoration:none;
+  font-weight: bold;
+  }
+
+#picture{display: none}
+
+/* PARALLAX */
+
+.mainContainer {
+  perspective: 1px;
+  transform-style: preserve-3d;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: visible;
+  background:rgb(29, 28, 28);
+}
+
+.parallaxContainer {
+  display: flex;
+  flex: 1 0 auto; 
+  position: relative; 
+  transform: translateZ(-1px) scale(2);
+  z-index: -1;  
+  justify-content: space-around;
+  background:rgb(29, 28, 28);
+  padding: 10%;
+	flex-direction: column;	
+}
+
+.wrapper{
+	display: flex;
+	flex-direction: column;	
+  align-items: flex-end;
+}
+
+.wrapperTwo{
+	display: flex;
+	flex-direction: column;	
+  align-items: flex-start;
+  padding-bottom: 3%;
+}
+
+.wrapperThree{
+	display: flex;
+	flex-direction: column;	
+  align-items: center;
+}
+
+.contentContainer{
+  display: flex;
+  position: relative;
+  z-index: 1;
+  flex-direction: column;
+  padding: 3%;
+  /* background: rgb(29, 28, 28); */
+  background: white;
+}
+
+.cardOne{
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left:15%;
+  padding-bottom: 2%;
+}
+
+.cardTwo{
+  padding: 0;
+  display:flex;
+  flex-direction: column;
+  padding-right: 15%;
+  padding-top: 2%;
+  align-items: flex-end;
+}
+
+.cardThree{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 2%;
+}
+
+.signTwo{
+  margin: 30px;
+  width: 55px;
+  height: 55px;
+}
+
+.signTwo:hover{
+border-color: rgb(22, 219, 147);
+border-style: solid;
+border-width:medium;
+height:55px;
+border-radius:50%;
+-moz-border-radius:50%;
+-webkit-border-radius:50%;
+width:55px;
+}
+
+/* TYPOGRAPHY */
+
+.nav-item{
+  font-family: "Roboto", Helvetica, sans-serif;
+  padding: 0 20px ;
+  background:rgb(29, 28, 28) ;  
+  font-size: 1.6em;
+  font-weight: 100;
+  text-transform: lowercase;
+}
+
+.dropdown-menu .dropdown-item{
+  margin: 0;
+  font-size: 1.3em;}
+
+
+ /* .dropdown-menu .nav-item{background:rgb(29, 28, 28) ;} */
+
+.navbar-custom .dropdown-toggle .nav-link{background:rgb(29, 28, 28) ;}
+
+.carouselH1 {
+  font-size: 4em;
+  margin-bottom: 25px;
+  font-family:"Roboto", Helvetica, sans-serif;
+  font-weight: lighter;
+  color: #000;
+}
+ 
+h1 span{
+  color: yellow;
+  color:rgb(22, 219, 147);
+  font-weight: 300;
+}
+
+.cardOne h4{text-transform: uppercase;}
+
+.cardOne h4, .cardTwo h4{
+  font-family: "Baumans", Arial, sans-serif;
+  color: black;
+}
+
+.wrapper p, .wrapperTwo p, .wrapperThree p{
+  font-weight: 200;
+  font-size: 1.8em;
+  font-family: "Roboto", Helvetica, sans-serif;
+  color: white;
+  margin:2%;
+}
+
+.cardOne h4{text-transform: uppercase;}
+
+.cardOne h4, .cardTwo h4{
+  font-family: "Baumans", Arial, sans-serif;
+  color: black;
+}
+
+/* OTHER */
+.carousel-control-next,
+.carousel-control-prev {
+  filter: invert(100%);
+}
+
+.grow { transition: all .2s ease-in-out; }
+
+.grow:hover { 
+  transform: scale(1.1); 
+  cursor: pointer;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1200px){
+  /* .navbar-custom .navbar-toggler{margin: 0;} */
+  
+  #hideLogo{display: none; }
+
+  .logo img{display: none; }
+  
+  .sign {
+    width: 40px; 
+    height: 40px;
+    margin: 1% ;
+  }
+
+  .logo3, .logo4{
+    display: flex;
+    justify-content: center;
+    align-content: flex-end;
+    flex-direction: column;
+    background: white;
+}
+
+  .logo3 h1{
+  display: flex;
+  justify-content: flex-start;
+  font-family: "Roboto", Helvetica, sans-serif;
+  font-weight: 100;
+   }
+
+  .logo4 h1{
+  display: flex;
+  justify-content: flex-end;
+  font-family: "Roboto", Helvetica, sans-serif;
+  font-weight: 100;
+  background: white;
+  }
+     
+  .nav-item{
+    font-size: 1.3em;
+    padding: 20px 0;  
+    color: black;
+  }
+
+  .dropdown-menu .dropdown-item{font-size: 1.15em;}
+  
+  #carouselExampleIndicators{display:none;}
+
+  #picture{display: block;}
+
+  
+  /* PARALLAX */
+  .wrapper p, .wrapperTwo p, .wrapperThree p{
+    color:white;
+    font-weight: 100;
+    font-size: 1.3em;
+    margin: 4%;
+  }
+
+  .wrapper, .wrapperTwo, .wrapperThree{
+  display: flex;
+  flex-direction: column;	
+  align-items: center;
+  padding: 0;
+  }
+
+  .carouselH1 {display: none;}
+    
+  .cardOne h4, .cardTwo h4{
+  font-size: 1.4em;
+  font-family: "Roboto", Arial, sans-serif;
+  text-transform: none;
+  color: white;
+  font-weight: 100; 
+  }
+  
+  .cardThree{padding: 2%;}
+
+  .mainContainer {
+    perspective: 1px;
+    transform-style: flat;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: visible;
+    z-index: 1;  
+  }
+  
+  .parallaxContainer {
+    display: flex;
+    transform: none;
+    z-index: 1;  
+    justify-content: space-around;
+    padding: 10%;
+  }
+
+  .contentContainer {
+    display: flex;
+    background: rgb(29, 28, 28);
+    z-index: 1;
+    flex-direction: column;
+    align-items: center;
+    transform: none;
+    padding: 2%;
+  }
+
+  .cardOne, .cardTwo{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    padding:5% 0%;
+    justify-content: center;
+    color: #FFFFFF;
+  }
+
+  .signTwo{
+    margin: 20px;
+    width: 45px;
+    height: 45px;
+  }
+ 
+.signTwo:hover{
+  height:45px;
+  width:45px;
+}
+  
+}

@@ -1,0 +1,91 @@
+@charset "utf-8";
+
+
+/*
+* CSS-Design
+* J.P.K. Portfolio
+*/
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html{	font-size: 100%;}
+
+/* .nav-item{color: black;} */
+
+.color{
+  font-size: 18px;
+  color: rgb(22, 219, 147);
+}
+
+#teaserH1 {
+  padding-top: 4%;
+}
+
+#teaserH1 h1{
+  font-family: "Roboto", Helvetica, sans-serif;
+  font-weight: 100;
+  display: flex;
+  justify-content: center;
+  font-size: 3em;
+  color:rgb(29, 28, 28);
+}
+
+.envelope2{
+  background:rgb(22, 219, 147); 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 3%;
+}
+
+.envelope1{
+  background-image: url("../images/tablet.png");
+  background-size: 100% 100%;
+  padding-top: 8%; 
+  padding-bottom:8%;
+  width: 70%;
+}
+
+.contentContainer {
+  display: flex;
+  background: rgb(29, 28, 28);
+  flex-direction: column;
+}
+
+
+.cardOne h4, .cardTwo h4{
+  color: #FFFFFF;
+}
+
+
+@media (max-width: 1200px){
+  
+.envelope1{
+  background-color: rgb(29, 28, 28);
+  background-image: none;
+  width: 100%;
+  }
+
+.envelope2{background-color: rgb(29, 28, 28);}
+
+#teaserH1 {
+  padding: 15% 0 1% 0;
+  background-color: rgb(29, 28, 28);
+}
+
+#teaserH1 h1{
+  font-family: "Roboto", Helvetica, sans-serif;
+  font-weight: 100;
+  display: flex;
+  justify-content: center;
+  font-size: 1.8em;
+  color:white;
+  /* padding: 3; */
+  font-style: italic;
+  background-color: rgb(29, 28, 28);
+}
+}
